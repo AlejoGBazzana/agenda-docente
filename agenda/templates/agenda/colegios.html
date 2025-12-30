@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+    <meta charset="UTF-8">
+    <title> Mis Colegios </title>
+</head>
+<body> 
+    <h2> Mis Colegios </h2>
+    <ul>
+        {% for colegio in colegios %}
+            <li>
+               <strong>{{ colegio.nombre }}</strong>
+               Direccion: {{ colegio.direccion }} <br>
+                Telefono: {{ colegio.telefono }} <br>
+                Dias de clases: {{ colegio.dias_de_clases }} <br>
+                Horario: {{ colegio.horario }} <br>
+                <button> Ver Cursos </button>
+            </li>
+            <hr>
+        {% endfor %}
+    </ul>
+</body>
+</html>

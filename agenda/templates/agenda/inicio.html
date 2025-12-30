@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Página de Inicio</title>
+    <style>
+        /* Esto aplica el fondo negro a toda la página y texto blanco */
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center; /* centra el texto horizontalmente */
+            padding-top: 50px; /* un poco de espacio arriba */
+        }
+    </style>
+</head>
+<body>
+    <h1>Bienvenido {{ docente.nombre }} {{ docente.apellido }}</h1>
+    <p>Puntaje: {{ docente.puntaje }}</p>
+</body>
+</html>
